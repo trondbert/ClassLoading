@@ -7,21 +7,34 @@ import java.util.ServiceLoader;
 public class ProsjektXRunner {
 
     private static ServiceLoader<ElementReverser> serviceLoader = ServiceLoader.load(ElementReverser.class);
+    private ElementReverser reverser;
 
     public static void main(String[] args) {
+        new ProsjektXRunner().run();
+    }
+
+    private void run() {
         System.out.println("Implementors");
-        ElementReverser reverser = null;
-        for (ElementReverser implementor : serviceLoader) {
-            if (implementor != null) {
-                reverser = implementor;
-            }
-            System.out.println(implementor.getClass().getCanonicalName());
-        }
+        ElementReverser reverser = getReverser();
         if (reverser == null) {
             System.out.println("Couldn't find an implementor. Exiting");
             return;
         }
         List<String> list = Arrays.asList(new String[]{"ball", "agnesisenga", "effekt", "frakt"});
         System.out.println("Result: " + reverser.work(list));
+    }
+
+    ElementReverser getReverser() {
+        if (this.reverser != null) {
+            return this.reverser;
+        }
+
+        for (ElementReverser implementor : serviceLoader) {
+            if (implementor != null) {
+                this.reverser = implementor;
+            }
+            System.out.println(implementor.getClass().getCanonicalName());
+        }
+        return this.reverser;
     }
 }
