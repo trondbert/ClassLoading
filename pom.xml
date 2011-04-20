@@ -6,7 +6,7 @@
 	<version>${build.version}</version>
     <packaging>pom</packaging>
     <name>ProsjektX</name>
-    <description>Toppnivå jar-fil for ProsjektX</description>
+    <description>Toppnivå jar-fil for Prosjekt X</description>
     <build>
 		<plugins>
 		  <plugin>
