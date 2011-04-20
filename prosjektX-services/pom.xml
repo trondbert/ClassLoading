@@ -3,12 +3,12 @@
 	<parent>
 		<groupId>com.trondvalen</groupId>
 		<artifactId>prosjektX</artifactId>
-		<version>0.2-SNAPSHOT-SNAPSHOT</version>
+		<version>0.2-SNAPSHOT</version>
 	</parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.trondvalen</groupId>
     <artifactId>prosjektX-services</artifactId>
-	<version>0.2-SNAPSHOT-SNAPSHOT</version>
+	<version>0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Serviceklasser for ProsjektX</name>
     <description>Serviceklasser for ProsjektX</description>    
