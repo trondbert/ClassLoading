@@ -4,11 +4,11 @@
 	<parent>
 		<groupId>com.trondvalen</groupId>
 		<artifactId>prosjektX</artifactId>
-		<version>0.3</version>
+		<version>0.3.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.trondvalen</groupId>
 	<artifactId>prosjektX-main</artifactId>
-	<version>0.3</version>
+	<version>0.3.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Prosjekt X main</name>
 	<description>Prosjekt X main (executable jar file)</description>
@@ -16,13 +16,13 @@
 		<dependency>
 			<groupId>com.trondvalen</groupId>
 			<artifactId>prosjektX-services</artifactId>
-			<version>0.3</version>
+			<version>0.3.1-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.trondvalen</groupId>
 			<artifactId>prosjektX-impl</artifactId>
-			<version>0.3</version>
+			<version>0.3.1-SNAPSHOT</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
