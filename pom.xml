@@ -3,17 +3,22 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.trondvalen</groupId>
 	<artifactId>prosjektX</artifactId>
-	<version>0.2</version>
+	<version>0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>ProsjektX</name>
 	<description>Toppnivå jar-fil for ProsjektX</description>
 	<scm>
-		<url />
+		<url>http://github.com/trondbert/ClassLoading</url>
 		<connection>scm:git:git@github.com:trondbert/ClassLoading.git</connection>
 		<developerConnection>scm:git:git@github.com:trondbert/ClassLoading.git</developerConnection>
 	</scm>
     <build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.1</version>
+			</plugin>
 		  <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
@@ -35,22 +40,5 @@
 			<id>localRepo</id>
 			<url>file://c:\users\trv\.m2\repository</url>
 		</repository>
-	</repositories>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.1</version>
-			</plugin>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.0.2</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	</repositories>	
 </project>
